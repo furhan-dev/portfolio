@@ -1,0 +1,193 @@
+:root {
+  --light-orange: rgba(255, 212, 132, 0);
+  --lightish-orange: rgba(255, 209, 172, 0.424);
+  --lightish-orange-transparent: rgba(255, 209, 172, 0.424);
+  --orange: #ff8f4a;
+  --neon-orange: #ff6b0f;
+  --almost-white: #fefefe;
+  /* --grey-black: #5d5d5d; */
+  --grey-black: #383838;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.75rem;
+  line-height: 1.4;
+  background-color: var(--almost-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.625rem;
+  color: var(--grey-black);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1 {
+  /* 4rem = 40px (4 * 10px) */
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 96%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 2.5rem 2.5rem 0 2.5rem;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+nav ul li {
+  margin: .35rem;
+}
+
+nav a {
+  text-decoration: none;
+  border: none;
+  color: var(--orange);
+  font-size: 2.7rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+nav a:hover {
+  border-bottom: 1.5px solid var(--grey-black);
+  padding-bottom: 1.5px;
+  color: var(--neon-orange);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 96%;
+  margin: 0 auto;
+  padding: 2.5rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+i {
+  position: relative;
+  top: .5rem;
+  margin-right: 1.5rem;
+  font-size: 3rem;
+}
+
+footer {
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: var(--grey-black);
+  text-align: center;
+  padding-bottom: 1rem;
+  margin: 1rem;
+}
+
+footer:hover {
+  color: var(--neon-orange);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.top-line {
+  position: fixed;
+  width: 100%;
+  height: 1.3rem;
+  background-image: linear-gradient(to right, var(--light-orange), var(--neon-orange));
+  z-index: 999;
+}
+
+.headshot {
+  width: 100%;
+  border-radius: 10%;
+}
+
+.name {
+  padding-top: 1.5rem;
+  color: var(--grey-black);
+  font-weight: 500;
+}
+
+.section-header {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  border-bottom: solid 1.5px;
+  padding-bottom: 5px;
+}
+
+.card {
+  background-color: var(--lightish-orange-transparent);
+  border: solid 2px var(--lightish-orange);
+  border-radius: .4em;
+  padding: .7rem 1.2rem 0 1.2rem;
+}
+
+#contact {
+  font-size: 2rem;
+}
+
+#contact a {
+  text-decoration: none;
+  color: var(--grey-black);
+  border-bottom: 1px solid var(--grey-black);
+}
