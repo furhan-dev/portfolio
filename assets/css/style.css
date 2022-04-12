@@ -110,8 +110,8 @@ main {
 }
 
 section {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   padding-top: 1.5rem;
   margin-bottom: 2.5rem;
 }
@@ -144,6 +144,20 @@ footer:hover {
   margin-right: -1.5rem;
 }
 
+.card-column {
+  flex: 1 0 100%;
+  padding: 1.5rem;
+  /* when the screen resizes, make it so our columns don't jump in size */
+  transition: flex-basis 500ms linear;
+}
+
+.card {
+  background-color: var(--lightish-orange-transparent);
+  border: solid 2px var(--lightish-orange);
+  border-radius: .4em;
+  padding: .7rem 1.2rem 0 1.2rem;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -171,15 +185,28 @@ footer:hover {
 .section-header {
   font-family: 'Roboto Mono', monospace;
   font-weight: 300;
+  text-align: center;
   border-bottom: solid 1.5px;
   padding-bottom: 5px;
 }
 
-.card {
-  background-color: var(--lightish-orange-transparent);
-  border: solid 2px var(--lightish-orange);
-  border-radius: .4em;
-  padding: .7rem 1.2rem 0 1.2rem;
+.card-header {
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: .3rem;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 2%;
+}
+
+.project-desc {
+  margin-top: .5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  font-size: 1.5rem;
+
 }
 
 #contact {
@@ -190,4 +217,38 @@ footer:hover {
   text-decoration: none;
   color: var(--grey-black);
   border-bottom: 1px solid var(--grey-black);
+}
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+  /* on tablets, set columns to only be 50% of the width and not grow */
+  .card-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* select the last child to grow to full width if it has space to grow */
+  .card-column:last-child {
+    flex-grow: 1;
+  }
+
+  .section-header {
+    text-align: left;
+  }
+}
+
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+  header {
+    width: 75%;
+  }
+
+  .card-column {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+  
+  .section-header {
+    text-align: left;
+  }
 }
