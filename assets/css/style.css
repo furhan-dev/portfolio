@@ -5,7 +5,6 @@
   --orange: #ff8f4a;
   --neon-orange: #ff6b0f;
   --almost-white: #fefefe;
-  /* --grey-black: #5d5d5d; */
   --grey-black: #383838;
 }
 
@@ -170,7 +169,7 @@ footer:hover {
 
 .headshot {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   border-radius: 10%;
 }
 
@@ -217,6 +216,10 @@ footer:hover {
   border-bottom: 1px solid var(--grey-black);
 }
 
+#about-me .headshot {
+  display: none;
+}
+
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
 @media screen and (min-width: 768px) {
   header {
@@ -249,13 +252,14 @@ footer:hover {
     font-size: 1.5rem;
   }
 
+  header .headshot {
+    display: none;
+  }
+
   .top-line {
     display: none;
   }
 
-  .headshot {
-    display: none;
-  }
 
   .name {
     padding-top: 0;
@@ -270,6 +274,18 @@ footer:hover {
 
   .section-header {
     text-align: left;
+  }
+
+  #about-me p {
+    margin-top: 2rem;
+  }
+
+  #about-me .headshot {
+    display: inline;
+    float: left;
+    width: 12em;
+    margin-right: 1rem;
+    border-radius: .5rem;
   }
 }
 
