@@ -226,12 +226,13 @@ footer:hover {
     flex-direction: row;
     align-items: center;
     width: 96%;
-    padding: 0 1.5rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 1.3rem;
     background-color: var(--lightish-orange-transparent);
     border: 2px solid var(--lightish-orange);
     border-radius: .4rem;
     margin-top: 1rem;
-    line-height: .7; /* why is this affecting a link size */
   }
 
   nav {
@@ -258,7 +259,6 @@ footer:hover {
   .top-line {
     display: none;
   }
-
 
   .name {
     padding-top: 0;
