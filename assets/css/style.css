@@ -74,6 +74,7 @@ header {
   margin: 0 auto;
   padding: 2.5rem 2.5rem 0 2.5rem;
   text-align: center;
+  font-family: 'Roboto Mono', monospace;
 }
 
 nav ul {
@@ -91,7 +92,6 @@ nav a {
   border: none;
   color: var(--orange);
   font-size: 2.7rem;
-  font-family: 'Roboto Mono', monospace;
 }
 
 nav a:hover {
@@ -176,7 +176,7 @@ footer:hover {
 .name {
   padding-top: 1.5rem;
   color: var(--grey-black);
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .section-header {
@@ -226,8 +226,7 @@ footer:hover {
     flex-direction: row;
     align-items: center;
     width: 96%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 0 1.5rem;
     background-color: var(--lightish-orange-transparent);
     border: 2px solid var(--lightish-orange);
     border-radius: .4rem;
