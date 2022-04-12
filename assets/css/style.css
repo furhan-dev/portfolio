@@ -70,7 +70,7 @@ p {
 header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   width: 96%;
   height: 100vh;
   margin: 0 auto;
@@ -81,7 +81,7 @@ header {
 nav ul {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 nav ul li {
