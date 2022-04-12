@@ -198,7 +198,7 @@ footer:hover {
 
 .project-image {
   width: 100%;
-  border-radius: 2%;
+  border-radius: 1%;
 }
 
 .project-desc {
@@ -247,7 +247,7 @@ footer:hover {
     flex: 0 0 33.333%;
     max-width: 33.333%;
   }
-  
+
   .section-header {
     text-align: left;
   }
