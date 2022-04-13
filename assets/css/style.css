@@ -270,6 +270,11 @@ footer:hover {
     margin-bottom: 0;
   }
 
+  .card-column:first-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
   /* on tablets, set columns to only be 50% of the width and not grow */
   .card-column {
     flex: 0 0 50%;
@@ -297,7 +302,7 @@ footer:hover {
 @media screen and (min-width: 992px) {
 
   .card-column {
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
+    flex: 0 0 25%;
+    max-width: 25%;
   }
 }
