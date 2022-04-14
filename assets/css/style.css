@@ -348,4 +348,9 @@ footer:hover {
     flex: 0 0 25%;
     max-width: 25%;
   }
+
+  #contact .card-column {
+    flex: 0 0 33%;
+    max-width: 33%;
+  } 
 }
