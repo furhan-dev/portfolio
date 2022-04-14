@@ -125,7 +125,7 @@ i {
 
 i:last-child {
   position: relative;
-  top: .1rem;
+  top: .2rem;
 }
 
 footer {
@@ -150,7 +150,7 @@ footer:hover {
 .headshot {
   width: 100%;
   max-width: 300px;
-  border-radius: 10%;
+  border-radius: 2%;
 }
 
 .name {
