@@ -71,8 +71,8 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   width: 96%;
-  margin: 0 auto;
-  padding: 2.5rem 2.5rem 0 2.5rem;
+  margin: 3rem auto;
+  padding: 0 2.5rem;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
 }
@@ -80,7 +80,7 @@ header {
 nav ul {
   display: flex;
   flex-direction: column;
-  margin: 3rem 0;
+  margin: 4rem 0;
 }
 
 nav ul li {
@@ -134,11 +134,9 @@ footer:hover {
 }
 
 .top-line {
-  position: fixed;
   width: 100%;
-  height: 1.3rem;
-  background-image: linear-gradient(to right, var(--light-orange), var(--neon-orange));
-  z-index: 999;
+  height: .5rem;
+  background-color: var(--neon-orange);
 }
 
 .headshot {
@@ -150,7 +148,8 @@ footer:hover {
 .name {
   padding-top: 1.5rem;
   color: var(--grey-black);
-  font-weight: 300;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
 }
 
 .section-header {
@@ -203,7 +202,7 @@ footer:hover {
   width: 3rem;
   top: 2.1rem;
   right: -.5rem;
-  transform : rotate(45deg);
+  transform: rotate(45deg);
   z-index: -1;
 }
 
@@ -229,8 +228,9 @@ footer:hover {
 }
 
 .card-header {
-  font-weight: 300;
-  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 2.7rem;
   text-align: center;
   margin-top: 1rem;
   margin-bottom: -.5rem;
@@ -254,6 +254,11 @@ footer:hover {
   border-bottom: 1px solid var(--grey-black);
 }
 
+#about-me p {
+  margin-top: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+}
+
 #about-me .headshot {
   display: none;
 }
@@ -266,10 +271,10 @@ footer:hover {
     width: 100%;
     padding-top: 0;
     padding-bottom: 0;
+    padding-right: 0;
     background-color: var(--neon-orange);
-    position: fixed;
-    z-index: 999;
     box-shadow: 0px 1px 10px #999;
+    margin: 0;
   }
 
   nav {
@@ -303,14 +308,8 @@ footer:hover {
     display: none;
   }
 
-  main {
-    position: relative;
-    top: 6.5rem;
-  }
-
   .name {
     padding-top: 0;
-    padding-left: 2.5rem;
     margin-bottom: 0;
   }
 
