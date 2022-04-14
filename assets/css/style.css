@@ -133,32 +133,6 @@ footer:hover {
   color: var(--neon-orange);
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
-}
-
-.card-column {
-  flex: 1 0 100%;
-  padding: 1.5rem;
-  /* when the screen resizes, make it so our columns don't jump in size */
-  transition: flex-basis 500ms linear;
-}
-
-.card {
-  background-color: var(--lightish-orange-transparent);
-  border: solid 2px var(--lightish-orange);
-  border-radius: .4em;
-  padding: .7rem 1.2rem 0 1.2rem;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
 .top-line {
   position: fixed;
   width: 100%;
@@ -187,23 +161,87 @@ footer:hover {
   padding-bottom: 5px;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.card-column {
+  flex: 1 0 100%;
+  padding: 1.5rem;
+  transition: flex-basis 500ms linear;
+}
+
+.card {
+  position: relative;
+  border-radius: 1rem;
+  box-shadow: .5rem .5rem 1.5rem rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-out;
+  background-color: var(--almost-white);
+}
+
+.card[data-project-status] .card-desc {
+  font-weight: 300;
+  line-height: 1.1;
+  font-size: 1.5rem;
+}
+
+/* add slight zoom/pop effect */
+.card[data-project-status]:hover {
+  transform: scale(1.04);
+}
+
+/* Add card ribbon */
+.card[data-project-status]::before {
+  position: absolute;
+  content: '';
+  background: var(--neon-orange);
+  height: 3rem;
+  width: 3rem;
+  top: 2.1rem;
+  right: -.5rem;
+  transform : rotate(45deg);
+  z-index: -1;
+}
+
+.card[data-project-status]::after {
+  position: absolute;
+  content: attr(data-project-status);
+  top: 1rem;
+  right: -1.2rem;
+  padding: .5rem;
+  width: 12rem;
+  background: var(--neon-orange);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--almost-white);
+  text-align: center;
+  box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
+}
+
+.card-image {
+  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+}
+
 .card-header {
   font-weight: 300;
+  font-size: 2rem;
   text-align: center;
-  padding-bottom: .3rem;
+  margin-top: 1rem;
+  margin-bottom: -.5rem;
 }
 
-.project-image {
-  width: 100%;
-  border-radius: 1%;
+.card-desc {
+  padding: 1.5rem;
 }
 
-.project-desc {
-  margin-top: .5rem;
-  font-weight: 300;
-  line-height: 1.2;
-  font-size: 1.5rem;
-
+.justify-center {
+  justify-content: center;
 }
 
 #contact {
@@ -225,14 +263,13 @@ footer:hover {
   header {
     flex-direction: row;
     align-items: center;
-    width: 96%;
+    width: 100%;
     padding-top: 0;
     padding-bottom: 0;
-    padding-right: 1.3rem;
-    background-color: var(--lightish-orange-transparent);
-    border: 2px solid var(--lightish-orange);
-    border-radius: .4rem;
-    margin-top: 1rem;
+    background-color: var(--neon-orange);
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0px 1px 10px #999;
   }
 
   nav {
@@ -242,6 +279,7 @@ footer:hover {
   nav ul {
     flex-direction: row;
     flex-wrap: nowrap;
+    margin: 2.2rem;
   }
 
   nav ul li {
@@ -265,14 +303,15 @@ footer:hover {
     display: none;
   }
 
-  .name {
-    padding-top: 0;
-    margin-bottom: 0;
+  main {
+    position: relative;
+    top: 6.5rem;
   }
 
-  .card-column:first-child {
-    flex: 0 0 100%;
-    max-width: 100%;
+  .name {
+    padding-top: 0;
+    padding-left: 2.5rem;
+    margin-bottom: 0;
   }
 
   /* on tablets, set columns to only be 50% of the width and not grow */
@@ -281,12 +320,17 @@ footer:hover {
     max-width: 50%;
   }
 
+  .card-column.highlight-project {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+
   .section-header {
     text-align: left;
   }
 
-  #about-me p {
-    margin-top: 2rem;
+  #about-me .section-header {
+    margin-bottom: 2.5rem;
   }
 
   #about-me .headshot {
@@ -295,12 +339,12 @@ footer:hover {
     width: 12em;
     margin-right: 1rem;
     border-radius: .5rem;
+    box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, 0.15);
   }
 }
 
 /* media query for larger screens */
 @media screen and (min-width: 992px) {
-
   .card-column {
     flex: 0 0 25%;
     max-width: 25%;
