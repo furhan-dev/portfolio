@@ -123,6 +123,11 @@ i {
   height: 4rem;
 }
 
+i:last-child {
+  position: relative;
+  top: .1rem;
+}
+
 footer {
   font-size: 1.5rem;
   font-weight: 100;
