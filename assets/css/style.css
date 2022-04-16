@@ -1,7 +1,4 @@
 :root {
-  --light-orange: rgba(255, 212, 132, 0);
-  --lightish-orange: rgba(255, 209, 172, 0.424);
-  --lightish-orange-transparent: rgba(255, 209, 172, 0.424);
   --orange: #ff8f4a;
   --neon-orange: #ff6b0f;
   --almost-white: #fefefe;
@@ -15,8 +12,9 @@
 html {
   /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
   font-size: 62.5%;
-  max-width: 1200px;
   margin: 0 auto;
+  /* set max width no larger than 1200px as the page looks too sparse and project cards grow too big */
+  max-width: 1200px;
 }
 
 body {
@@ -125,6 +123,7 @@ i {
   height: 4rem;
 }
 
+/* update the position of the last icon so it aligns better with the text */
 i:last-child {
   position: relative;
   top: .2rem;
@@ -360,4 +359,18 @@ footer:hover {
     flex: 0 0 50%;
     max-width: 50%;
   } 
+}
+
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+
+  .card-column {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .card-column.highlight-project {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
 }
