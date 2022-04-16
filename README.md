@@ -1,6 +1,6 @@
-# Welcome to Furhan's Porfolio
+# Welcome to my porfolio
 
-> :warning: My porfolio is a work in progress but can be found live at [furhan.dev](https://furhan.dev) 
+> :warning:  This project is currently a work in progress but can be found live at [furhan.dev](https://furhan.dev) 
 
 ## Features
 - [x] Create project cards 
