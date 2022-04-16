@@ -66,6 +66,11 @@ p {
   margin-bottom: 1rem;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -253,12 +258,15 @@ footer:hover {
   justify-content: center;
 }
 
+#projects .card-desc {
+  text-align: center;
+}
+
 #contact {
   font-size: 2rem;
 }
 
 #contact a {
-  text-decoration: none;
   color: var(--grey-black);
   border-bottom: 1px solid var(--grey-black);
 }
