@@ -141,7 +141,7 @@ footer {
 }
 
 footer p {
-  margin: 1rem 35%;
+  margin: 1rem;
   color: grey;
 }
 
@@ -327,6 +327,10 @@ footer p:hover {
 
   header .headshot {
     display: none;
+  }
+
+  footer p {
+    margin: 1rem 35%;
   }
 
   .header-content {

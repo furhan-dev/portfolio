@@ -11,5 +11,8 @@
 - [ ] Add hamburger for nav on mobile
 - [ ] Complete resume section and add link to pdf
 
-## Screenshot
-![Portfolio Screenshot](./assets/img/portfolio-screenshot.png?raw=true "Furhan's Portfolio")
+## Screenshots
+### Mobile
+![Portfolio Screenshot](./assets/img/portfolio-screenshot-mobile.png?raw=true "Furhan's Portfolio")
+### Desktop
+![Portfolio Screenshot](./assets/img/portfolio-screenshot-desktop.png?raw=true "Furhan's Portfolio")
