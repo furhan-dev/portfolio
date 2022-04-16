@@ -271,10 +271,10 @@ footer p:hover {
 
 #contact {
   font-size: 2rem;
+  color: var(--grey-black);
 }
 
 #contact a {
-  color: var(--grey-black);
   border-bottom: 1px solid var(--grey-black);
 }
 
