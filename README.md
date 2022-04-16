@@ -12,7 +12,7 @@
 - [ ] Complete resume section and add link to pdf
 
 ## Screenshots
-<p align="center" width="100%">
+<p width="100%">
     <img width="50%" style="float: left;"src="./assets/img/portfolio-screenshot-mobile.png?raw=true" alt="Mobile screenshot">
     <img width="50%" src="./assets/img/portfolio-screenshot-desktop.png?raw=true" alt="Desktop screenshot">
 </p>
