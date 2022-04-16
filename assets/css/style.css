@@ -136,15 +136,22 @@ i:last-child {
 
 footer {
   font-size: 1.5rem;
-  font-weight: 100;
-  color: var(--grey-black);
   text-align: center;
   padding-bottom: 1rem;
-  margin: 1rem;
 }
 
-footer:hover {
-  color: var(--neon-orange);
+footer p {
+  margin: 1rem 40%;
+  color: grey;
+}
+
+/* add fun rainbow effect on hover */
+footer p:hover {
+  color: transparent;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 500ms ease;
 }
 
 .top-line {
