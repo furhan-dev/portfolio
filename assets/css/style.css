@@ -121,11 +121,13 @@ section {
 i {
   position: relative;
   top: 1rem;
+  margin-top: .5rem;
   margin-left: 1.5rem;
   margin-right: 2rem;
   font-size: 4rem;
   width: 4rem;
   height: 4rem;
+  text-align: center;
 }
 
 /* update the position of the last icon so it aligns better with the text */
@@ -389,7 +391,7 @@ footer p:hover {
   }
 
   .card-column.highlight-project {
-    flex: 1 0 100%;
+    flex: 0 0 100%;
     max-width: 100%;
   }
 
