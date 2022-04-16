@@ -12,7 +12,7 @@
 - [ ] Complete resume section and add link to pdf
 
 ## Screenshots
-### Mobile
-![Portfolio Screenshot](./assets/img/portfolio-screenshot-mobile.png?raw=true "Furhan's Portfolio")
 ### Desktop
 ![Portfolio Screenshot](./assets/img/portfolio-screenshot-desktop.png?raw=true "Furhan's Portfolio")
+### Mobile
+![Portfolio Screenshot](./assets/img/portfolio-screenshot-mobile.png?raw=true "Furhan's Portfolio")
