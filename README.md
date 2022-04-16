@@ -13,6 +13,6 @@
 
 ## Screenshots
 <p width="100%">
-    <img width="50%" style="display: inline; float: left;" src="./assets/img/portfolio-screenshot-mobile.png?raw=true" alt="Mobile screenshot">
-    <img width="50%" style="dislpay: inliine: float: right;" src="./assets/img/portfolio-screenshot-desktop.png?raw=true" alt="Desktop screenshot">
+    <img width="45%" style="display: inline; float: left;" src="./assets/img/portfolio-screenshot-mobile.png?raw=true" alt="Mobile screenshot">
+    <img width="45%" style="dislpay: inliine: float: right;" src="./assets/img/portfolio-screenshot-desktop.png?raw=true" alt="Desktop screenshot">
 </p>
