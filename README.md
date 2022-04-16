@@ -12,7 +12,5 @@
 - [ ] Complete resume section and add link to pdf
 
 ## Screenshots
-### Desktop
-![Portfolio Screenshot](./assets/img/portfolio-screenshot-desktop.png?raw=true "Furhan's Portfolio")
-### Mobile
-![Portfolio Screenshot](./assets/img/portfolio-screenshot-mobile.png?raw=true "Furhan's Portfolio")
+<img style="float: left;" src="./assets/img/portfolio-screenshot-mobile.png?raw=true" alt="Mobile screenshot" width="300" />
+<img src="./assets/img/portfolio-screenshot-desktop.png?raw=true" width="300" alt="Desktop screenshot" />
