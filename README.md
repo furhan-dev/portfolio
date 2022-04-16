@@ -7,7 +7,9 @@
 - [x] Make webpage responsive (header, cards, headshot)
 - [x] Add ribbons to project cards
 - [x] Add custom domain
+- [ ] Replace 'About Me' placeholder text
 - [ ] Add hamburger for nav on mobile
+- [ ] Complete resume section and add link to pdf
 
 ## Screenshot
 ![Portfolio Screenshot](./assets/img/portfolio-screenshot.png?raw=true "Furhan's Portfolio")
