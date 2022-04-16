@@ -12,6 +12,6 @@
 - [ ] Complete resume section and add link to pdf
 
 ## Screenshots
-Mobile                     |  Desktop
-:-------------------------:|:-------------------------:
+Mobile | Desktop
+--- | ---
 ![Portfolio Screenshot](./assets/img/portfolio-screenshot-mobile.png?raw=true "Mobile Portfolio")  |  ![Portfolio Screenshot](./assets/img/portfolio-screenshot-desktop.png?raw=true "Desktop screenshot")
