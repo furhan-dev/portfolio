@@ -373,4 +373,21 @@ footer:hover {
     flex: 1 0 100%;
     max-width: 100%;
   }
+
+  /* make contact card responsive */
+  #contact .card-column {
+    flex: 0 0 67%;
+    max-width: 67%;
+  } 
+
+  #contact .card-desc {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #contact .card-desc p {
+    flex: 0 0 45%;
+    max-width: 45%;
+    margin-right: 5%;
+  }
 }
