@@ -119,7 +119,7 @@ section {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  margin: 2.5rem 0;
+  margin: 2.5rem 0 4rem 0;
 }
 
 i {
@@ -305,6 +305,10 @@ footer p:hover {
   font-family: 'Raleway', sans-serif;
 }
 
+.section-header {
+    margin: 0;
+}
+
 #about-me p {
   margin-top: 1.5rem;
   font-family: 'Raleway', sans-serif;
@@ -402,7 +406,6 @@ footer p:hover {
     text-align: left;
     align-items: flex-start;
     width: 100%;
-    margin: 0;
   }
 
   .card.contact {
