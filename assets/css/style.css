@@ -430,6 +430,7 @@ footer p:hover {
   #projects {
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center;
   }
 
   .flex-container {
