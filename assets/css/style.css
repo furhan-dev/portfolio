@@ -309,20 +309,20 @@ footer p:hover {
     margin: 0;
 }
 
-#about-me p {
+.about-me p {
   margin-top: 1.5rem;
   font-family: 'Raleway', sans-serif;
 }
 
-#about-me .headshot {
+.about-me .headshot {
   display: none;
 }
 
-#contact a {
+.contact a {
   border-bottom: 1px solid var(--grey-black);
 }
 
-#resume {
+.resume {
   margin-left: 1%;
 }
 
@@ -412,7 +412,7 @@ footer p:hover {
     max-width: 45%;
   }
   
-  #about-me .headshot {
+  .about-me .headshot {
     display: inline;
     float: left;
     width: 12em;
@@ -426,7 +426,7 @@ footer p:hover {
 /* media query for larger screens */
 @media screen and (min-width: 992px) {
 
-  #projects {
+  .projects {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
