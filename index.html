@@ -21,6 +21,7 @@
 
 <body>
   <div class="top-line"></div>
+
   <header>
     <a href="#">
       <img src="./assets/img/headshot.jpg" alt="Furhan's headshot" class="headshot" />
@@ -43,100 +44,108 @@
       </ul>
     </nav>
   </header>
+
   <main>
+
+    <!-- about me section -->
+    <h3 class="section-header">About Me</h3>
     <section id="about-me">
-      <h3 class="section-header">About Me</h3>
-      <img src="./assets/img/headshot.jpg" alt="Furhan's headshot" class="headshot" />
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Eget magna fermentum iaculis
-        eu non diam phasellus vestibulum lorem. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt.
-        Mi eget mauris tra et ultrices neque ornare aenean euismod. At risus viverra adipiscing at in tellus.
-        Viverra adipiscing at in tellus. Pharetra massa massa ultricies mi quis hendrerit dolor magna eget. Potenti
-        nullam ac tortor vitae purus faucibus ornare. Enim lobortis scelerisque fermentum dui faucibus. Accumsan lacus
-        vel facilisis volutpat est velit. Ultricies mi eget mauris pharetra et ultrices neque. Turpis nunc eget lorem
-        dolor sed viverra ipsum nunc aliquet.</p>
+      <div>
+        <img src="./assets/img/headshot.jpg" alt="Furhan's headshot" class="headshot" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Eget magna fermentum iaculis
+          eu non diam phasellus vestibulum lorem. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt.
+          Mi eget mauris tra et ultrices neque ornare aenean euismod. At risus viverra adipiscing at in tellus.
+          Viverra adipiscing at in tellus. Pharetra massa massa ultricies mi quis hendrerit dolor magna eget. Potenti
+          nullam ac tortor vitae purus faucibus ornare. Enim lobortis scelerisque fermentum dui faucibus. Accumsan lacus
+          vel facilisis volutpat est velit. Ultricies mi eget mauris pharetra et ultrices neque. Turpis nunc eget lorem
+          dolor sed viverra ipsum nunc aliquet.</p>
+      </div>
     </section>
+
+    <!-- projects section-->
+    <h3 class="section-header">My Projects</h3>
     <section id="projects">
-      <h3 class="section-header">My Projects</h3>
-      <div class="row">
-        <div class="card-column highlight-project">
+
+      <!-- showcase card -->
+      <article class="flex-container showcase-container justify-center">
+        <figure class="card showcase" data-project-status="Completed">
           <a href="#projects">
-            <figure class="card" data-project-status="Completed">
-              <img src="http://placeimg.com/640/360/animals" alt="project image" class="card-image" />
-              <h4 class="card-header">Project Title</h4>
-              <figcaption class="card-desc">Project Description</figcaption>
-            </figure>
+            <img src="http://placeimg.com/640/360/animals" alt="project image" class="card-image" />
+            <h4 class="card-header">Project 1</h4>
+            <figcaption class="card-desc">Project Description</figcaption>
           </a>
-        </div>
-        <div class="card-column">
+        </figure>
+      </article>
+
+      <!-- other cards -->
+      <article class="flex-container card-container justify-center">
+
+        <figure class="card" data-project-status="Completed">
           <a href="#projects">
-            <figure class="card" data-project-status="Completed">
-              <img src="http://placeimg.com/640/360/animals" alt="project image" class="card-image" />
-              <h4 class="card-header">Project Title</h4>
-              <figcaption class="card-desc">Project Description</figcaption>
-            </figure>
+            <img src="http://placeimg.com/640/360/animals" alt="project image" class="card-image" />
+            <h4 class="card-header">Project 2</h4>
+            <figcaption class="card-desc">Project Description</figcaption>
           </a>
-        </div>
-        <div class="card-column">
+        </figure>
+
+        <figure class="card" data-project-status="Completed">
           <a href="#projects">
-            <figure class="card" data-project-status="Completed">
-              <img src="http://placeimg.com/640/360/animals" alt="project image" class="card-image" />
-              <h4 class="card-header">Project Title</h4>
-              <figcaption class="card-desc">Project Description</figcaption>
-            </figure>
+            <img src="http://placeimg.com/640/360/animals" alt="project image" class="card-image" />
+            <h4 class="card-header">Project 3</h4>
+            <figcaption class="card-desc">Project Description</figcaption>
           </a>
-        </div>
-        <div class="card-column">
+        </figure>
+
+        <figure class="card" data-project-status="Completed">
           <a href="#projects">
-            <figure class="card" data-project-status="In progress">
-              <img src="http://placeimg.com/640/360/animals" alt="project image" class="card-image" />
-              <h4 class="card-header">Project Title</h4>
-              <figcaption class="card-desc">Project Description</figcaption>
-            </figure>
+            <img src="http://placeimg.com/640/360/animals" alt="project image" class="card-image" />
+            <h4 class="card-header">Project 4</h4>
+            <figcaption class="card-desc">Project Description</figcaption>
           </a>
-        </div>
-        <div class="card-column">
+        </figure>
+
+        <figure class="card" data-project-status="Completed">
           <a href="#projects">
-            <figure class="card" data-project-status="Not started">
-              <img src="http://placeimg.com/640/360/animals" alt="project image" class="card-image" />
-              <h4 class="card-header">Project Title</h4>
-              <figcaption class="card-desc">Project Description</figcaption>
-            </figure>
+            <img src="http://placeimg.com/640/360/animals" alt="project image" class="card-image" />
+            <h4 class="card-header">Project 5</h4>
+            <figcaption class="card-desc">Project Description</figcaption>
           </a>
-        </div>
-      </div>
+        </figure>
+
+      </article>
     </section>
+
+    <!-- contact section -->
+    <h3 class="section-header">Contact Me</h3>
     <section id="contact">
-      <h3 class="section-header">Contact Me</h3>
-      <div class="row">
-        <div class="card-column">
-          <div class="card">
-            <div class="card-desc">
-              <p>
-                <i class="fa-regular fa-envelope"></i><a href="mailto:contact@furhan.dev">contact@furhan.dev</a>
-              </p>
-              <p>
-                <i class="fa-brands fa-github"></i><a href="https://github.com/furhan-dev" target="_blank">furhan-dev</a>
-              </p>
-              <p>
-                <i class="fa-brands fa-linkedin-in"></i><a href="https://www.linkedin.com/in/furhan" target="_blank">in/furhan</a>
-              </p>
-              <p>
-                <i class="fa-brands fa-instagram"></i><a href="https://instagram.com/furhan.dev" target="_blank">furhan.dev</a>
-              </p>
-              <p>
-                <i class="fa fa-phone"></i><a href="tel:206-420-6353">(206) 420-6353</a>
-              </p>
-              <p>
-                <i class="fa fa-house"></i>Kirkland, WA
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <figure class="card contact">
+        <figcaption>
+          <p>
+            <i class="fa-regular fa-envelope"></i><a href="mailto:contact@furhan.dev">contact@furhan.dev</a>
+          </p>
+          <p>
+            <i class="fa-brands fa-github"></i><a href="https://github.com/furhan-dev" target="_blank">furhan-dev</a>
+          </p>
+          <p>
+            <i class="fa-brands fa-linkedin-in"></i><a href="https://www.linkedin.com/in/furhan" target="_blank">in/furhan</a>
+          </p>
+          <p>
+            <i class="fa-brands fa-instagram"></i><a href="https://instagram.com/furhan.dev" target="_blank">furhan.dev</a>
+          </p>
+          <p>
+            <i class="fa fa-phone"></i><a href="tel:206-420-6353">(206) 420-6353</a>
+          </p>
+          <p>
+            <i class="fa fa-house"></i>Kirkland, WA
+          </p>
+        </figcaption>
+      </figure>
     </section>
+
+    <!-- resume section-->
+    <h3 class="section-header">Resume</h3>
     <section id="resume">
-      <h3 class="section-header">Resume</h3>
       <p>Coming soon...</p>
     </section>
   </main>
