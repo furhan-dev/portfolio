@@ -13,4 +13,5 @@
 
 ## Screenshots
 ![Mobile screenshot](./assets/img/portfolio-screenshot-mobile.png?raw=true "Mobile screenshot")
+![Tablet screenshot](./assets/img/portfolio-screenshot-tablet.png?raw=true "Tablet screenshot")
 ![Desktop screenshot](./assets/img/portfolio-screenshot-desktop.png?raw=true "Desktop screenshot")
