@@ -451,6 +451,7 @@ footer p:hover {
   .card-container .card-label {
     width: 50%;
     opacity: .95;
+    bottom: .8rem;
   }
 
   .card-container .card .card-header {
