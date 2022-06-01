@@ -15,6 +15,7 @@ small {
   font-family: 'Roboto Mono', sans-serif;
 }
 
-.company-location {
+.company-location,
+.edu-location {
   font-size: .9rem;
 }
