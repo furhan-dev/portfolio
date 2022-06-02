@@ -11,11 +11,20 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Mono', sans-serif;
 }
 
-small {
-  font-family: 'Roboto Mono', sans-serif;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+i {
+  font-size: 1.5rem
 }
 
 .company-location,
 .edu-location {
   font-size: .9rem;
+}
+
+.contact-card {
+  font-size: 1.2rem;
 }
