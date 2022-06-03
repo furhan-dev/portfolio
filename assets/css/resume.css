@@ -16,10 +16,6 @@ a {
   color: inherit;
 }
 
-i {
-  font-size: 1.8rem
-}
-
 .company-location,
 .edu-location {
   font-size: .7rem;
@@ -27,6 +23,10 @@ i {
 
 .contact-card {
   font-size: 1rem;
+}
+
+.contact-card i {
+  font-size: 1.8rem
 }
 
 .card-title {
@@ -42,15 +42,16 @@ i {
 }
 
 @media screen and (min-width: 992px) {
-  i {
-    font-size: 1.8rem;
-  }
   .container {
     box-shadow: .5rem .5rem 1.5rem rgba(0, 0, 0, 0.15);
   }
 
   .contact-card {
     font-size: 1.2rem;
+  }
+
+  .contact-card i {
+    font-size: 1.8rem;
   }
 }
 
