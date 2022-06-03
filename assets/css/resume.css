@@ -61,6 +61,10 @@ a {
     max-width: 8.5in;
   }
 
+  .name {
+    font-size: 5.5rem;
+  }
+
   .projects {
     display: none;
   }
