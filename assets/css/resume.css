@@ -17,14 +17,50 @@ a {
 }
 
 i {
-  font-size: 1.5rem
+  font-size: 1.8rem
 }
 
 .company-location,
 .edu-location {
-  font-size: .9rem;
+  font-size: .7rem;
 }
 
 .contact-card {
-  font-size: 1.2rem;
+  font-size: 1rem;
+}
+
+.card-title {
+  font-size: .95rem;
+}
+
+.work-summary {
+  font-size: .8rem;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+@media screen and (min-width: 992px) {
+  i {
+    font-size: 1.8rem;
+  }
+  .container {
+    box-shadow: .5rem .5rem 1.5rem rgba(0, 0, 0, 0.15);
+  }
+
+  .contact-card {
+    font-size: 1.2rem;
+  }
+}
+
+@media print {
+  html {
+    font-size: 62.5%;
+    max-width: 8.5in;
+  }
+
+  .projects {
+    display: none;
+  }
 }
