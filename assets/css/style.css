@@ -66,42 +66,35 @@ p {
 }
 
 a {
-  text-decoration: none;
   /* needed to replace blue/purple link color */
   color: inherit;
+  text-decoration: none;
 }
+
 
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 96%;
-  margin: 3rem auto;
-  padding: 0 2.5rem;
+  /* needed for headshot image centering */
   text-align: center;
+}
+
+nav {
   font-family: 'Roboto Mono', monospace;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: column;
-  margin: 4rem 0;
-}
-
-nav ul li {
-  margin: .35rem;
-}
-
-nav a {
-  text-decoration: none;
-  border: none;
-  color: var(--neon-orange);
+  background-color: var(--neon-orange);
+  box-shadow: 0px 1px 10px #999;
+  padding: 0 2.5rem !important;
+  text-align: left;
   font-size: 2.7rem;
 }
 
-nav a:hover {
-  border-bottom: 1.5px solid var(--grey-black);
-  padding-bottom: 1.5px;
+nav a {
+  margin: 1rem;
+  color: var(--grey-black)
+}
+
+nav .navbar-nav a:hover {
+  margin: 1rem;
+  color: black;
+  text-decoration: underline;
 }
 
 main {
@@ -111,6 +104,7 @@ main {
   width: 96%;
   margin: 2.5rem auto 0 auto;
   padding: 2.5rem;
+  padding-top: 0;
 }
 
 section {
@@ -159,10 +153,13 @@ footer p:hover {
   transition: 500ms ease;
 }
 
+.navbar-toggler {
+  font-size: 2.2rem !important;
+}
+
 .section-header {
   font-family: 'Roboto Mono', monospace;
   font-weight: 300;
-  text-align: center;
   border-bottom: solid 1.5px;
   padding-bottom: 5px;
   margin-bottom: 2.5rem;
@@ -287,6 +284,15 @@ footer p:hover {
   margin: 1%;
 }
 
+.card.contact a {
+  padding-bottom: 2px;
+  border-bottom: solid 1px; 
+}
+
+.card.contact a:hover {
+  color: black;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -301,6 +307,7 @@ footer p:hover {
   width: 100%;
   max-width: 300px;
   border-radius: 2%;
+  margin-bottom: 4rem;
 }
 
 .name {
@@ -323,10 +330,6 @@ footer p:hover {
   display: none;
 }
 
-.contact a {
-  border-bottom: 1px solid var(--grey-black);
-}
-
 .resume {
   margin-left: 1%;
 }
@@ -336,8 +339,6 @@ footer p:hover {
 
   /* adjust header for larger screens */
   header {
-    flex-direction: row;
-    align-items: center;
     width: 100%;
     padding-top: 0;
     padding-bottom: 0;
@@ -351,17 +352,8 @@ footer p:hover {
     margin-left: auto;
   }
 
-  nav ul {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 2.2rem;
-  }
-
-  nav ul li {
-    margin: 0 1.2rem;
-  }
-
   nav a {
+    margin: 1rem;
     font-size: 1.5rem;
     color: var(--grey-black)
   }
@@ -375,7 +367,7 @@ footer p:hover {
   }
 
   /* hide headshot and top-line */
-  header .headshot {
+  .headshot {
     display: none;
   }
 

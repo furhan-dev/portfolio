@@ -14,38 +14,36 @@
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&family=Roboto+Mono:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Furhan's Portfolio</title>
 </head>
 
 <body>
-  <div class="top-line"></div>
-
-  <header>
-    <a href="#">
-      <img src="./assets/img/headshot.jpg" alt="Furhan's headshot" class="headshot" />
-    </a>
-    <h1 class="name">Furhan Samani</h1>
-    <nav>
-      <ul>
-        <li>
-          <a href="#about-me">About Me</a>
-        </li>
-        <li>
-          <a href="#projects">My Projects</a>
-        </li>
-        <li>
-          <a href="#contact">Contact Me</a>
-        </li>
-        <li>
-          <a href="./resume.html">Resume</a>
-        </li>
-      </ul>
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><h1 class="name pt-2">Furhan Samani</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a href="#about-me">About Me</a> 
+            <a href="#projects">My Projects</a>
+            <a href="#contact">Contact Me</a>
+            <a href="./resume.html">Resume</a>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
 
   <main>
+    <a href="#" class="text-center">
+      <img src="./assets/img/headshot.jpg" alt="Furhan's headshot" class="headshot" />
+    </a>
 
     <!-- about me section -->
     <h3 class="section-header" id="about-me">About Me</h3>
@@ -64,11 +62,11 @@
 
       <!-- showcase card -->
       <article class="flex-container showcase-container justify-center">
-        <figure class="card showcase" data-project-status="New!">
+        <figure class="card border-0 showcase" data-project-status="New!">
           <a href="https://pdubya1632.github.io/project-1-group-8/" target="_blank">
             <img src="./assets/img/outside_thumb.png" alt="project image" class="card-image" />
             <figcaption class="card-label">
-              <h4 class="card-header">Get Outside</h4>
+              <h4 class="card-header border-0">Get Outside</h4>
               <h5 class="card-desc">Find a hike near you!</h5>
             </figcaption>
           </a>
@@ -78,41 +76,41 @@
       <!-- other cards -->
       <article class="flex-container card-container justify-center">
 
-        <figure class="card">
+        <figure class="card border-0">
           <a href="https://weather.furhan.dev" target="_blank">
             <img src="./assets/img/weather_thumb.png" alt="project image" class="card-image" />
             <figcaption class="card-label">
-              <h4 class="card-header">Weather App</h4>
+              <h4 class="card-header border-0">Weather App</h4>
               <h5 class="card-desc">Forecasts for your favorite cities</h5>
             </figcaption>
           </a>
         </figure>
 
-        <figure class="card">
+        <figure class="card border-0">
           <a href="https://quiz.furhan.dev" target="_blank">
             <img src="./assets/img/quiz_thumb.png" alt="project image" class="card-image" />
             <figcaption class="card-label">
-              <h4 class="card-header">JavaScript Quiz</h4>
+              <h4 class="card-header border-0">JavaScript Quiz</h4>
               <h5 class="card-desc">Test your JavaScript knowledge</h5>
             </figcaption>
           </a>
         </figure>
 
-        <figure class="card">
+        <figure class="card border-0">
           <a href="https://planner.furhan.dev" target="_blank">
             <img src="./assets/img/planner_thumb.png" alt="project image" class="card-image" />
             <figcaption class="card-label">
-              <h4 class="card-header">Work Planner</h4>
+              <h4 class="card-header border-0">Work Planner</h4>
               <h5 class="card-desc">Plan your work day</h5>
             </figcaption>
           </a>
         </figure>
 
-        <figure class="card" data-project-status="Coming Soon!">
+        <figure class="card border-0" data-project-status="Coming Soon!">
           <a href="https://github.com/furhan-dev/readme-generator" target="_blank">
             <img src="./assets/img/readme_thumb.png" alt="project image" class="card-image" />
             <figcaption class="card-label">
-              <h4 class="card-header">README Gen</h4>
+              <h4 class="card-header border-0">README Gen</h4>
               <h5 class="card-desc">CLI README generator</h5>
             </figcaption>
           </a>
@@ -124,7 +122,7 @@
     <!-- contact section -->
     <h3 class="section-header" id="contact">Contact Me</h3>
     <section class="contact">
-      <figure class="card contact">
+      <figure class="card contact border-0">
         <figcaption>
           <p>
             <i class="fa fa-envelope"></i><a href="mailto:contact@furhan.dev">contact@furhan.dev</a>
@@ -149,6 +147,7 @@
     </section>
 
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 <footer>
   <p>Designed and made by me in 2022</p>
