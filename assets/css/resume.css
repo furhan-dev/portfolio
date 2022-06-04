@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+.proficiencies {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
@@ -39,6 +40,8 @@ a:hover {
 }
 
 .contact-card,
+.prof-card,
+.hobbies-card,
 .section-title {
   background-color: #ff6b0f;
 }
@@ -61,6 +64,11 @@ a:hover {
 
 .container {
   max-width: 1200px;
+}
+
+.prof-card,
+.hobbies-card {
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -88,6 +96,8 @@ a:hover {
   }
 
   .contact-card,
+  .prof-card,
+  .hobbies-card,
   .section-title {
     background-color: #DADCDE;
   }
