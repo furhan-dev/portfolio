@@ -72,18 +72,12 @@ a {
 }
 
 
-header {
-  /* needed for headshot image centering */
-  text-align: center;
-}
-
 nav {
   font-family: 'Roboto Mono', monospace;
   background-color: var(--neon-orange);
   box-shadow: 0px 1px 10px #999;
-  padding: 0 2.5rem !important;
-  text-align: left;
-  font-size: 2.7rem;
+  font-size: 2rem;
+  padding: 0rem !important;
 }
 
 nav a {
