@@ -29,6 +29,15 @@ a:hover {
   font-size: 1rem;
 }
 
+.contact-card,
+.section-title {
+  background-color: #ff6b0f;
+}
+
+.card-subtitle {
+  color: #ff6b0f !important;
+}
+
 .contact-card i {
   font-size: 1.8rem
 }
@@ -67,5 +76,14 @@ a:hover {
 
   .name {
     font-size: 5.5rem;
+  }
+
+  .contact-card,
+  .section-title {
+    background-color: #DADCDE;
+  }
+
+  .card-subtitle {
+    color: black !important;
   }
 }
