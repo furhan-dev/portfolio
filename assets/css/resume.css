@@ -17,7 +17,16 @@ a {
 }
 
 a:hover {
-  color: #ff6b0f;
+  color: white;
+}
+
+/* add fun rainbow effect on hover */
+.name:hover {
+  color: transparent;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 500ms ease;
 }
 
 .company-location,
