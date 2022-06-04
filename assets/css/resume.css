@@ -16,6 +16,10 @@ a {
   color: inherit;
 }
 
+a:hover {
+  color: #ff6b0f;
+}
+
 .company-location,
 .edu-location {
   font-size: .7rem;
