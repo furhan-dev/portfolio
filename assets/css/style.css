@@ -14,15 +14,6 @@ body {
   background-color: var(--almost-white);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Roboto Mono", sans-serif;
-}
-
 nav {
   background-color: var(--neon-orange);
 }
@@ -103,7 +94,6 @@ footer p:hover {
 
 .card-container {
   flex: 1 0 80%;
-  font-family: "Roboto", sans-serif;
 }
 
 /* set cards in other projects to 20% */
@@ -188,7 +178,6 @@ footer p:hover {
 }
 
 .card-label .card-desc {
-  font-family: "Roboto", sans-serif;
   font-weight: 200;
   font-size: 1rem !important;
   color: var(--almost-white);
