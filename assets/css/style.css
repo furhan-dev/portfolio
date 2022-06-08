@@ -222,13 +222,17 @@ footer p:hover {
   max-width: 300px;
   border-radius: 2%;
   margin-bottom: 1rem;
-  margin-left: 1%;
 }
 
 .section-header {
   font-size: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 0;
+}
+
+.about-me {
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .about-me p {
