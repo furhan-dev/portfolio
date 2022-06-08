@@ -62,6 +62,10 @@ footer p {
   color: grey;
 }
 
+nav .name {
+  font-family: "Roboto Mono", monospace;
+}
+
 /* add fun rainbow effect on hover */
 nav .name:hover,
 footer p:hover {
