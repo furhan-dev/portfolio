@@ -48,7 +48,7 @@ i {
   margin-top: 0.5rem;
   margin-left: 1.5rem;
   margin-right: 2rem;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   text-align: center;
 }
 
@@ -191,19 +191,15 @@ footer p:hover {
 }
 
 .card.contact {
-  padding: 1.5rem;
-  text-align: center;
-}
-
-.card.contact {
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--grey-black);
   margin: 1%;
+  padding: 1.5rem;
 }
 
 .card.contact a {
-  padding-bottom: 2px;
+  padding-bottom: 1.5px;
   border-bottom: solid 1px;
   text-decoration: none;
   color: inherit;
@@ -260,6 +256,11 @@ footer p:hover {
     margin: 1rem 35%;
   }
 
+  i {
+    font-size: 1.8rem;
+    margin-right: 1.5rem;
+  }
+
   /* hide headshot and top-line */
   .headshot {
     display: none;
@@ -313,7 +314,9 @@ footer p:hover {
   }
 
   .card.contact {
-    max-width: 55%;
+    min-width: auto;
+    max-width: 48%;
+    font-size: 1rem;
   }
 
   .about-me .headshot {
@@ -365,7 +368,7 @@ footer p:hover {
   }
 
   .card.contact {
-    max-width: 48%;
+    max-width: 33%;
   }
 
   .card-container .card[data-project-status]::before {
