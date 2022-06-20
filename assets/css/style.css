@@ -198,10 +198,12 @@ footer p:hover {
   padding: 1.5rem;
 }
 
+.card.contact p {
+  display: flex;
+  align-items: flex-end;
+}
+
 .card.contact a {
-  padding-bottom: 1.5px;
-  border-bottom: solid 1px;
-  text-decoration: none;
   color: inherit;
 }
 
@@ -257,7 +259,7 @@ footer p:hover {
   }
 
   i {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-right: 1.5rem;
   }
 
